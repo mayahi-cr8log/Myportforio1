@@ -1,0 +1,16 @@
+.p-logo__image {
+    max-width: 100px;
+    margin: 5%;
+}
+
+@media (min-width: 768px) {
+    .p-logo__image {
+        max-width: 130px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .p-logo__image {
+        max-width: 200px;
+    }
+}

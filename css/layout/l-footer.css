@@ -1,0 +1,17 @@
+.l-footer {
+    width: 100%;
+    text-align: center;
+    background-color: #3af3dd;
+    height: clamp(34px,10%,120px);
+    min-height: 41.33px;
+    opacity: 0.9;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+    justify-content: center; /* 横方向の中央揃え (必要に応じて) */
+}
+
+.footer-text {
+    font-size: 1rem;
+}
