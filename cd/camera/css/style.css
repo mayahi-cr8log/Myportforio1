@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+.wapper{
+    width:100%;
+    margin: auto;
+    min-width: 980px;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.header{
+    background-image:url("../images/bg-about.jpg");
+    background-size: 100%;
+    padding-bottom: 320px;
+    color: white;
+    margin-bottom: 42px;
+    height: 0;
+}
+.contens{
+    width:960px;
+    margin: auto;
+}
+.title{
+    float: left;
+    margin-top: 51px;
+}
+#drawer-checkbox{
+    display: none;
+}
+.hamburger{
+    float: right;
+}
+.menubar{
+    list-style: none;
+    font-size: 24px;
+    margin-top: 59px;
+    height: 31px;
+}
+.menubar a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    float: left;
+    margin-right:20px;
+    font-family: "Baskerville-SemiBold","Baskerville";
+}
+.about{
+    margin-left: 10px;
+}
+.about h2{
+    width:960px;
+    border-bottom: solid 1px #D6D6D6;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    font-size: 37px;
+    font-family: 'Merriweather', serif;
+}
+.about p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+h3{
+    font-size:25px;
+}
+.profileconts{
+    margin-bottom: 81px;
+}
+.profilebox{
+    width: 560px;
+    margin-left: 10px;
+    float: left;
+}
+.profile{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+h3{
+    border-left: 10px solid #9CB4A5;
+    padding-left: 10px;
+    font-family: "Baskerville-Bold","Baskerville";
+    font-weight: bold;
+}
+.profile h3{
+    margin-bottom: 21px;
+}
+.profile p{
+    font-weight: bold;
+    font-size: 15px;
+}
+.text{
+    font-size: 15px;
+    line-height: 30px;
+}
+.banner{
+    float: right;
+    margin-top:32px;
+    margin-right: 10px;
+}
+.history{
+    margin-left: 10px;
+}
+.box{
+    border:2px solid #D5D5D5 ;
+    border-top: none;
+    display: flex;
+    align-items: stretch;
+}
+.box:nth-child(1){
+    border-top:2px solid #D5D5D5 ;
+}
+.personal{
+    float: left;
+    padding: 26px 0;
+    width: 235px;
+    font-weight: bold;
+    background-color:#F0F0F0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume{
+    float: left;
+    width: 700px;
+    text-align: left;
+    border-left: 2px solid #D5D5D5;
+    background-color: white;
+    padding:26px 0 26px 42px;
+    display: flex;
+    align-items: stretch;
+}
+.historybox{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    background-color:#F0F0F0 ;
+}
+.history h3{
+    margin-bottom: 27px;
+}
+.footer{
+    text-align: center;
+    margin-top: 63px;
+    background-color: #767671;
+    color: white;
+    line-height: 63px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 750px) {
+    .wapper{
+        width:100%;
+        margin: auto;
+        min-width: auto;
+    }
+    .contens{
+        width:90%;
+        max-width: 639px;
+        margin: 0 3% 0 auto;
+    }
+    .header{
+        background-size: 192%;
+        background-position:left 21% bottom 94%;
+        padding-bottom: 38%;
+        color: white;
+        margin-bottom: 30px;
+    }
+    .title {
+        font-size: 42px;
+        float: left;
+        margin-top: 22px;
+        position: relative;
+        right: 2%;
+    }
+    .about{
+        font-size: 47px;
+        margin-left: 0px;
+    }
+    .about h2{
+        width:100%;
+        border-bottom: solid 1px #D6D6D6;
+        font-size: 51%;
+        font-family: 'Merriweather', serif;
+        line-height: 27px;
+        padding-left: 0;
+    }
+    .about p{
+        margin-top: 16px;
+        margin-bottom: 22px;
+        font-size: 32%;
+    }
+    h3{
+        font-size:24px;
+    }
+    .profilebox{
+        width: 100%;
+        margin-bottom: 35px;
+        float: none;
+        margin-left: 0;
+    }
+    .profile{
+        margin-top: 29px;
+        margin-bottom: 26px;
+        font-size: 26px;
+    }
+    .profile h2{
+        margin-bottom: 22px;
+        border-left: 7px solid #9CB4A5;
+        padding-left: 8px;
+        font-family: 'Merriweather', serif;
+        line-height: 24px;
+    }
+    .profile p{
+        font-weight: bold;
+        font-size: 59%;
+    }
+    .text{
+        font-size: 95%;
+        line-height: 28px;
+    }
+    .banner{
+        float: none;
+        width: 58%;
+        margin: 0 22% 37px auto;
+    }
+    .banner img{
+        width: 100%;
+        vertical-align: bottom;
+    }
+    .history{
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+    .historybox{
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: center;
+        font-size: 15px;
+        width: 96%;
+    }
+    .personal{
+        width: 89px;
+        padding: 2% 0 ;
+    }
+    .box{
+        width: 100%;
+    }
+    .resume{
+        float: left;
+        width: calc(100% - 89px);
+        padding: 2% 0 2% 3%;
+    }
+    .history h2{
+        margin-bottom: 27px;
+        font-family: 'Merriweather', serif;
+        padding-left: 4px;
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .footer {
+        margin-top: 45px;
+        line-height: 49px;
+        font-size: 13px;
+    }
+    #drawer-checkbox {
+        display: none;
+      }
+      #drawer-icon {
+        cursor: pointer;
+        display: inline-block;
+        height: 43px;
+        position: relative;
+        width: 43px;
+        background-color: white;
+        border-radius: 3px;
+      }
+      #drawer-icon span {
+        background: #5B5B5B;
+        display: block;
+        height: 4px;
+        left: 25px;
+        margin: -8% 0 0 -42%;
+        position: absolute;
+        top: 22px;
+        transition: all 0.3s ease-in-out;
+        width: 28px;
+      }
+      #drawer-icon span::before,
+      #drawer-icon span::after {
+        -webkit-transform: rotate(0);
+        background-color: #5B5B5B;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 49%;
+        margin: -20% 0 0 -49%;
+        position: absolute;
+        top: 70%;
+        transform: rotate(0);
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+      }
+      #drawer-icon span::before {
+        margin-top: -45%;
+      }
+      #drawer-icon span::after {
+        margin-top: 29%;
+      }
+      #drawer-checkbox:checked ~ #drawer-icon span {
+        background: rgba(51, 51, 51, 0);
+      }
+      #drawer-checkbox:checked ~ #drawer-icon span::before,
+      #drawer-checkbox:checked ~ #drawer-icon span::after {
+        content: "";
+        display: block;
+        height: 100%;
+        left: 50%;
+        margin: -8% 0 0 -42%;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+      }
+      #drawer-checkbox:checked ~ #drawer-icon span::before {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      #drawer-checkbox:checked ~ #drawer-icon span::after {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    
+      /* ドロワーのコンテンツエリア部分 */
+    
+      #drawer-content {
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 40;
+        width: 90%;
+        max-width: 90%;
+        height: 100%;
+        background: white;
+        transition: all 0.3s ease-in-out 0s;
+        transform: translateX(-110%);
+      }
+      #drawer-checkbox:checked ~ #drawer-content {
+        transform: translateX(0);
+        box-shadow: 6px 0 25px rgba(0, 0, 0, 0.16);
+      }
+    
+      /* ドロワー以外の部分をクリックで閉じるようにする部分 */
+      /* ポイントはz-indexをコンテントよりクローズを小さくすること */
+      #drawer-close {
+        display: none;
+        position: fixed;
+        z-index: 39;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0;
+        transition: all 0.3s ease-in-out 0s;
+      }
+      #drawer-checkbox:checked ~ #drawer-close {
+        display: block;
+        opacity: 0.3;
+      }
+      .menu a {
+        color: white;
+        display: block;
+        padding-left: 10%;
+      }
+      .menu {
+        border-bottom: solid 8px white;
+        line-height: 250%;
+        text-align: left;
+        background-color: #767671;
+        float: none;
+        padding-right: 0;
+      }
+      .menubar {
+        float: none;
+        height: 203px;
+      }
+      .hamburger{
+        position: relative;
+        width: 25px;
+        height: 25px;
+        top: 29px;
+        right: 5%;
+      }
+}
