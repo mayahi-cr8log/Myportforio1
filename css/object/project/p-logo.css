@@ -2,7 +2,7 @@
     max-width: 100px;
 }
 .p-logo{
-    width: 30%;
+    width: 20%;
 }
 @media (min-width: 768px) {
     .p-logo__image {
