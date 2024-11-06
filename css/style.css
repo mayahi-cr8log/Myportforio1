@@ -17,4 +17,9 @@ body {
 .Home{
     overflow: auto;
 }
-.wf-roundedmplus1c { font-family: "M PLUS Rounded 1c"; }
+.wf-roundedmplus1c { 
+    font-family: "M PLUS Rounded 1c"; 
+}
+.content-width{
+    width:90%;
+}
