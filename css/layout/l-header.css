@@ -34,7 +34,6 @@
 .l-header__nav-drawer {
     display: none; /* 初期状態で非表示 */
     position: absolute;
-    top: 128%; /* ヘッダーの下に配置 */
     transform: translateX(-92%); /* 中央揃え */
     width: 300px;
     background-color: rgb(132,255,245,0.5);
