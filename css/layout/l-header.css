@@ -11,9 +11,6 @@
 }
 
 .l-header__nav {
-    display: flex;
-    align-items: center;
-    position: relative; /* ドロワーの位置を相対的に設定 */
     width:36px;
     height:36px;
 }
