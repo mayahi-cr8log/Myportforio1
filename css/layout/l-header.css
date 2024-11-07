@@ -14,8 +14,8 @@
     display: flex;
     align-items: center;
     position: relative; /* ドロワーの位置を相対的に設定 */
-    width:clamp(34px,9%,36px);
-    height:clamp(34px,9%,36px);
+    width:36px;
+    height:36px;
 }
 
 .l-header__hamburger {
