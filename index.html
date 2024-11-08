@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/object/project/p-logo.css">
     <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>My Portfolio</title>
 </head>
 <body>
@@ -39,8 +41,16 @@
         </header>
         <main class="l-main Home">
             <div class="home-scroll">
-                <section class="m-main-content">
-                    <img src="img/main(1).jpg" alt="メイン画像">
+                <section class="m-main-content slider">
+                    <div>
+                        <img src="img/main(1).jpg" alt="メイン画像">
+                    </div>
+                    <div>
+                        <img src="img/main(1).jpg" alt="メイン画像">
+                    </div>
+                    <div>
+                        <img src="img/main(1).jpg" alt="メイン画像">
+                    </div>
                 </section>
                 <div class="content-width">
                     <!-- 自己紹介セクション -->
@@ -108,5 +118,20 @@
         </footer>
     </div>
     <script src="js/header.js"></script>
+    <script src="js/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots: true,
+            fade: true,
+            cssEase: 'linear'
+          });
+        });
+      </script>
 </body>
 </html>
