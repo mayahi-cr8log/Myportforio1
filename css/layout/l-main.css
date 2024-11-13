@@ -5,6 +5,7 @@
 
 }
 /* Homeページ*/
+
 .p-about, .p-goal, .p-career {
 background-color: rgba(255, 255, 255,0.9);
 padding: 20px;
@@ -54,7 +55,6 @@ padding-left: 5%;
   align-items: center;
   flex-direction: column; /* 必要に応じて方向を調整 */
   margin: 2% auto; /* 上下のマージンを調整 */
-  overflow: scroll;
 }
 /* 子要素 img を中央に配置 */
 .m-main-content img {
