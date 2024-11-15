@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <title>My Portfolio</title>
 </head>
@@ -84,10 +86,11 @@
                         <!-- 就労移行支援 -->
                         <div class="p-career__item">
                             <h3 class="p-career__item-title">就労移行支援プログラム</h3>
-                            <h4>基本的なWeb技術とツール操作の習得 (20XX年〜20XX年)</h4>
+                            <h4>基本的なWeb技術とツール操作の習得 (2021年〜2024年)</h4>
                             <ul class="p-career__list">
-                                <li class="p-career__list-item">学んだスキル: HTML、CSS、JavaScript、Photoshop（基本操作）、Illustrator（基本操作）</li>
-                                <li class="p-career__list-item">Webページの構築に必要な基本技術であるHTML、CSS、JavaScriptを習得。PhotoshopやIllustratorの基本的な操作も学び、今後はさらにデザインスキルを向上させる予定です。</li>
+                                <li class="p-career__list-item">学んだスキル: HTML、CSS、、Photoshop（基本操作）、Illustrator（基本操作）</li>
+                                <li class="p-career__list-item">Webページの構築に必要な基本技術であるHTML、CSS、JavaScript(jquery)を習得。
+                                    <br>PhotoshopやIllustratorの基本的な操作も学び、今後はさらにデザインスキルを向上させる予定です。</li>
                                 <li class="p-career__list-item">Webサイトのレイアウト作成と効率的なコーディング手法を学習し、特にユーザビリティの向上に注力しています。</li>
                             </ul>
                         </div>
@@ -95,9 +98,9 @@
                         <!-- 職業訓練プログラム -->
                         <div class="p-career__item">
                             <h3 class="p-career__item-title">職業訓練プログラム</h3>
-                            <h4>Web開発技術の短期集中講座 (3ヶ月間、20XX年)</h4>
+                            <h4>Web開発技術の短期集中講座 (4ヶ月間、2023年)</h4>
                             <ul class="p-career__list">
-                                <li class="p-career__list-item">学んだスキル: JavaScript、Python、Java、MySQL、Bootstrap、Vue.js（基礎）</li>
+                                <li class="p-career__list-item">学んだスキル: JavaScript、Python、php、Java、MySQL、Bootstrap、Vue.js（基礎）</li>
                                 <li class="p-career__list-item">フロントエンドおよびバックエンドの基本スキルを習得し、MySQLを使用したデータベース管理の基礎を理解しました。</li>
                                 <li class="p-career__list-item">Bootstrapを用いたレスポンシブデザインと、Vue.jsでの動的Webコンテンツの基礎を学び、さらなる技術習得を継続中です。</li>
                             </ul>
@@ -106,9 +109,9 @@
                         <!-- 自己学習プロジェクト -->
                         <div class="p-career__item">
                             <h3 class="p-career__item-title">自己学習プロジェクト</h3>
-                            <h4>基礎技術の応用とスキル向上 (20XX年〜現在)</h4>
+                            <h4>基礎技術の応用とスキル向上 (2021年〜現在)</h4>
                             <ul class="p-career__list">
-                                <li class="p-career__list-item">学んだスキル: JavaScript、Python、Vue.js（基礎レベル）</li>
+                                <li class="p-career__list-item">学んだスキル: HTML、CSS、JavaScript、Photoshop、JavaScript、Illustrator、Python、Vue.js（基礎レベル）</li>
                                 <li class="p-career__list-item">JavaScriptやPythonを活用した効率的なコーディング技術を自己学習で強化。特に問題解決能力の向上に注力しています。</li>
                                 <li class="p-career__list-item">Vue.jsの基礎を学習し、今後は応用力を高めるためのプロジェクトに取り組む予定です。</li>
                             </ul>
@@ -122,17 +125,19 @@
         </footer>
     </div>
     <script src="js/header.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
     <script>
         $(document).ready(function(){
           $('.slider').slick({
-            autoplay: true,
-            autoplaySpeed: 3000,
-            arrows: false,
-            dots: true,
-            fade: true,
-            cssEase: 'linear'
+            centerMode: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+    fade: true,
+    cssEase: 'linear'
           });
         });
       </script>
