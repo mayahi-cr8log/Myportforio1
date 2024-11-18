@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="css/foundation/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/layout/l-header.css">
@@ -10,11 +18,6 @@
     <link rel="stylesheet" href="css/layout/l-footer.css">
     <link rel="stylesheet" href="css/object/project/p-logo.css">
     <link rel="stylesheet" href="css/media.css">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <title>My Portfolio</title>
 </head>
@@ -44,15 +47,19 @@
         </header>
         <main class="l-main Home">
             <div class="home-scroll">
-                <section class="m-main-content slider">
-                    <div>
-                        <img src="img/main(1).jpg" alt="メイン画像">
-                    </div>
-                    <div>
-                        <img src="img/main(1).jpg" alt="メイン画像">
-                    </div>
-                    <div>
-                        <img src="img/main(1).jpg" alt="メイン画像">
+                <section class="m-main-content">
+                    <div class="sliderblock">
+                        <div class="slider">
+                            <div>
+                                <img src="img/main.jpg" alt="メイン画像">
+                            </div>
+                            <div>
+                                <img src="img/main.jpg" alt="メイン画像">
+                            </div>
+                            <div>
+                                <img src="img/main.jpg" alt="メイン画像">
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <div class="content-width">
@@ -130,14 +137,14 @@
         $(document).ready(function(){
           $('.slider').slick({
             centerMode: true,
-    centerPadding: '0',
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    dots: true,
-    fade: true,
-    cssEase: 'linear'
+            centerPadding: '0',
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots: true,
+            fade: true,
+            cssEase: 'linear'
           });
         });
       </script>
