@@ -52,13 +52,13 @@ and (min-height: 240px) and (max-height: 480px) {
     }
     .m-portfolio{
         width: 88%;
-        height: 80%;
+        height: 57%;
         column-gap: 2%;
     }
     .contens__gradient{
         border-radius: 20px;
         width:45%;
-        height: 39%;
+        height: 33%;
         padding: 2%;
     }
     .scloll{
@@ -99,6 +99,7 @@ and (min-height: 240px) and (max-height: 480px) {
     .scloll{
         column-gap: 15%;/*調節*/
         row-gap: 15%;
+        overflow: auto;
     }
     .title-icon{
         width: 15%;

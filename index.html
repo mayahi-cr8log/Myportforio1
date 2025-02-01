@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
     <!-- slickのJavaScript -->
@@ -21,12 +22,13 @@
 
     <title>My Portfolio</title>
 </head>
+
 <body>
     <div class="wrapper home">
-        
+
         <header class="l-header">
             <div class="content-width h">
-                <div class="p-logo">
+                <div class="p-logo anim-box poyoyon3 is-animated">
                     <img src="img/logo/Logo.png" alt="Logo" class="p-logo__image">
                 </div>
                 <nav class="l-header__nav">
@@ -64,8 +66,10 @@
                 </section>
                 <div class="content-width">
                     <!-- 自己紹介セクション -->
-                    <section class="p-about">
-                        <h1 class="p-about__title">about</h1>
+                    <section class="p-about anim-box zoomin is-animated">
+                        <div class="">
+                            <h1 class="p-about__title">about</h1>
+                        </div>
                         <p class="p-about__text">はじめまして、山口将史と申します。</p>
                         <p class="p-about__text">
                             私はウェブデザインを中心に、4年間にわたりコーディング技術やデザインツールの習得に努めてきました。
@@ -97,8 +101,10 @@
                             <ul class="p-career__list">
                                 <li class="p-career__list-item">学んだスキル: HTML、CSS、、Photoshop（基本操作）、Illustrator（基本操作）</li>
                                 <li class="p-career__list-item">Webページの構築に必要な基本技術であるHTML、CSS、JavaScript(jquery)を習得。
-                                    <br>PhotoshopやIllustratorの基本的な操作も学び、今後はさらにデザインスキルを向上させる予定です。</li>
-                                <li class="p-career__list-item">Webサイトのレイアウト作成と効率的なコーディング手法を学習し、特にユーザビリティの向上に注力しています。</li>
+                                    <br>PhotoshopやIllustratorの基本的な操作も学び、今後はさらにデザインスキルを向上させる予定です。
+                                </li>
+                                <li class="p-career__list-item">Webサイトのレイアウト作成と効率的なコーディング手法を学習し、特にユーザビリティの向上に注力しています。
+                                </li>
                             </ul>
                         </div>
 
@@ -107,9 +113,12 @@
                             <h3 class="p-career__item-title">職業訓練プログラム</h3>
                             <h4>Web開発技術の短期集中講座 (4ヶ月間、2023年)</h4>
                             <ul class="p-career__list">
-                                <li class="p-career__list-item">学んだスキル: JavaScript、Python、php、Java、MySQL、Bootstrap、Vue.js（基礎）</li>
-                                <li class="p-career__list-item">フロントエンドおよびバックエンドの基本スキルを習得し、MySQLを使用したデータベース管理の基礎を理解しました。</li>
-                                <li class="p-career__list-item">Bootstrapを用いたレスポンシブデザインと、Vue.jsでの動的Webコンテンツの基礎を学び、さらなる技術習得を継続中です。</li>
+                                <li class="p-career__list-item">学んだスキル:
+                                    JavaScript、Python、php、Java、MySQL、Bootstrap、Vue.js（基礎）</li>
+                                <li class="p-career__list-item">フロントエンドおよびバックエンドの基本スキルを習得し、MySQLを使用したデータベース管理の基礎を理解しました。
+                                </li>
+                                <li class="p-career__list-item">
+                                    Bootstrapを用いたレスポンシブデザインと、Vue.jsでの動的Webコンテンツの基礎を学び、さらなる技術習得を継続中です。</li>
                             </ul>
                         </div>
 
@@ -118,8 +127,10 @@
                             <h3 class="p-career__item-title">自己学習プロジェクト</h3>
                             <h4>基礎技術の応用とスキル向上 (2021年〜現在)</h4>
                             <ul class="p-career__list">
-                                <li class="p-career__list-item">学んだスキル: HTML、CSS、JavaScript、Photoshop、JavaScript、Illustrator、Python、Vue.js（基礎レベル）</li>
-                                <li class="p-career__list-item">JavaScriptやPythonを活用した効率的なコーディング技術を自己学習で強化。特に問題解決能力の向上に注力しています。</li>
+                                <li class="p-career__list-item">学んだスキル:
+                                    HTML、CSS、JavaScript、Photoshop、JavaScript、Illustrator、Python、Vue.js（基礎レベル）</li>
+                                <li class="p-career__list-item">
+                                    JavaScriptやPythonを活用した効率的なコーディング技術を自己学習で強化。特に問題解決能力の向上に注力しています。</li>
                                 <li class="p-career__list-item">Vue.jsの基礎を学習し、今後は応用力を高めるためのプロジェクトに取り組む予定です。</li>
                             </ul>
                         </div>
@@ -132,22 +143,23 @@
         </footer>
     </div>
     <script src="js/header.js"></script>
-    
+
     <script>
-        $(document).ready(function(){
-          $('.slider').slick({
-            centerMode: true,
-            centerPadding: '0',
-            slidesToShow: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            arrows: false,
-            dots: true,
-            fade: true,
-            cssEase: 'linear'
-          });
+        $(document).ready(function () {
+            $('.slider').slick({
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                dots: true,
+                fade: true,
+                cssEase: 'linear'
+            });
         });
-      </script>
+    </script>
 
 </body>
+
 </html>
