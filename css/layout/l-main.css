@@ -70,7 +70,36 @@ padding-left: 5%;
   max-height: 100%;/*検討*/
   height: auto;
 }
-
+/* zoom_anime */
+.anim-box.zoomin.is-animated {
+  animation: zoomIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+ 
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* zoom_anime 終わり*/
+/* ぽよぽよ */
+.anim-box.poyopoyo {
+  animation: poyopoyo 2s ease-out infinite;
+  opacity: 1;
+}
+@keyframes poyopoyo {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+  50%, 70% {
+    transform: scale(0.95);
+  }
+}
+/* ぽよぽよ 終わり*/
 /* portfolioページ*/
 .contens__gradient{
   background: linear-gradient(to right, rgba(232, 59, 7, 0.8),rgba(208, 213, 7, 0.8));
