@@ -1,8 +1,25 @@
 @media (min-width: 768px) {
+    .heading {
+        font-size: 36px;
+        margin: 1%;
+    }
+
     .l-header__nav-list {
-        display: flex; /* 通常のナビゲーション表示 */
-        justify-content: flex-end;
         gap: 1rem;
+    }
+
+    .l-main {
+        height: 87%;
+    }
+
+    .m-portfolio {
+        width: 65%;
+        height: 91%;
+    }
+
+    .contens__gradient {
+        width: 84%;
+        height: 19%;
     }
 }
 
@@ -11,23 +28,25 @@
     .l-header__nav-list {
         justify-content: flex-end;
     }
+
     .p-logo__image {
         max-width: 200px;
     }
-    
+
 }
+
 /* For screen widths above 1024px終り */
 
 /*最小デバイスのレイアウト*/
 /* 最小スマホXperia X10 miniなど対応*/
-@media (min-width: 240px) and (max-width: 740px)
-and (min-height: 240px) and (max-height: 480px) {
-    .l-header__nav-list li{
+@media (min-width: 240px) and (max-width: 740px) and (min-height: 240px) and (max-height: 480px) {
+    .l-header__nav-list li {
         width: 160px;
         height: 51px;
         text-align: center;
         margin: 13px auto;
     }
+
     .l-header__nav-item {
         color: #fff;
         text-decoration: none;
@@ -35,10 +54,10 @@ and (min-height: 240px) and (max-height: 480px) {
         padding: 16px;
     }
 }
+
 /* 最小スマホXperia X10 miniなど対応終わり*/
 /* Specific adjustments for small screens header*/
-@media (min-width: 240px) and (max-width: 480px)
-        and (min-height: 240px) and (max-height: 320px){
+@media (min-width: 240px) and (max-width: 480px) and (min-height: 240px) and (max-height: 320px) {
     .l-header__hamburger {
         width: 30px;
         height: 23px;
@@ -46,149 +65,199 @@ and (min-height: 240px) and (max-height: 480px) {
 }
 
 /*スマホデバイス横向き フレックスで固定するか検討 g5やXの調節が必要*/
-@media (min-width: 640px) and (max-width:1023px) and (min-height: 344px) and (max-height:1023px){
-    .l-main{
+@media (min-width: 640px) and (max-width:1023px) and (min-height: 344px) and (max-height:1023px) {
+    .heading {
+        font-size: 12px;
+        margin: 0%;
+    }
+
+    .l-main {
         height: 80%;
     }
-    .m-portfolio{
-        width: 88%;
-        height: 57%;
+
+    .m-portfolio {
+        width: 80%;
+        height: 63%;
         column-gap: 2%;
     }
-    .contens__gradient{
+
+    .contens__gradient {
         border-radius: 20px;
-        width:45%;
-        height: 33%;
+        width: 29%;
+        height: 37%;
         padding: 2%;
     }
-    .scloll{
-        column-gap: 15%;/*調節*/
+
+    .scloll {
+        column-gap: 15%;
+        /*調節*/
         row-gap: 15%;
     }
-    .title-icon{
+
+    .title-icon {
         width: 15%;
         height: fit-content;
         border-radius: 13%;
-      }
-    .icon{
-    width: 15%;
-    height:fit-content;
-    border-radius: 50%;
     }
-    .r{
-        display:flex;
+
+    .icon {
+        width: 15%;
+        height: fit-content;
+        border-radius: 50%;
+    }
+
+    .r {
+        display: flex;
     }
 }
+
 /*ipad mini1024×768 + Nest Hub1024×600横向き*/
-@media (min-width: 1024px) and (min-height: 590px) and (max-height:1023px){
-    
-    .l-main{
+@media (min-width: 1024px) and (min-height: 590px) and (max-height:1023px) {
+
+    .l-main {
         height: 80%;
     }
-    .m-portfolio{
+
+    .m-portfolio {
         width: 88%;
         height: 80%;
         column-gap: 2%;
     }
-    .contens__gradient{
+
+    .contens__gradient {
         border-radius: 20px;
-        width:45%;
+        width: 45%;
         height: 39%;
         padding: 2%;
     }
-    .scloll{
-        column-gap: 15%;/*調節*/
+
+    .scloll {
+        column-gap: 15%;
+        /*調節*/
         row-gap: 15%;
         overflow: auto;
     }
-    .title-icon{
+
+    .title-icon {
         width: 15%;
         height: fit-content;
         border-radius: 13%;
-      }
-    .icon{
-    width: 15%;
-    height:fit-content;
-    border-radius: 50%;
     }
-    .r{
-        display:flex;
+
+    .icon {
+        width: 15%;
+        height: fit-content;
+        border-radius: 50%;
+    }
+
+    .r {
+        display: flex;
+    }
+
+    .l-header__nav {
+        display: flex;
+        align-items: center;
+        width: 35%;
+    }
+
+    .heading {
+        font-size: 35px;
+        margin: 7px;
+    }
+
+    .l-header__nav-list li {
+        width: 90px;
     }
 }
+
 /*ipad mini1024×768 + Nest Hub1024×600横向き横向き終わり*/
 /*ipad proの大きさ横向きから*/
-@media (min-width: 1366px) and (min-height: 1024px){
-    .l-main{
+@media (min-width: 1366px) and (min-height: 1024px) {
+    .l-main {
         height: 88%;
     }
-    .m-portfolio{
+
+    .m-portfolio {
         width: 88%;
         height: 80%;
         column-gap: 2%;
     }
-    .contens__gradient{
+
+    .contens__gradient {
         border-radius: 20px;
-        width:45%;
+        width: 45%;
         height: 39%;
         padding: 2%;
     }
-    .scloll{
-        column-gap: 15%;/*調節*/
+
+    .scloll {
+        column-gap: 15%;
+        /*調節*/
         row-gap: 15%;
     }
-    .title-icon{
+
+    .title-icon {
         width: 15%;
         height: fit-content;
         border-radius: 13%;
-      }
-    .icon{
-    width: 15%;
-    height:fit-content;
-    border-radius: 50%;
     }
-    .r{
-        display:flex;
+
+    .icon {
+        width: 15%;
+        height: fit-content;
+        border-radius: 50%;
+    }
+
+    .r {
+        display: flex;
     }
 }
+
 /*ipad proの大きさ横向きから終り*/
 
 /**/
-@media (min-width: 1114px) and (max-width:1368px) and (min-height: 720px) and (max-height:1023px){
-    
-}
+@media (min-width: 1114px) and (max-width:1368px) and (min-height: 720px) and (max-height:1023px) {}
+
 /*横向き終り*/
 /*pc*/
-@media (min-width: 1369px) and (max-width:2560px) and (min-height: 1369px) and (max-height:1445px){
-    .l-main{
+@media (min-width: 1369px) and (max-width:2560px) and (min-height: 1369px) and (max-height:1445px) {
+    .l-main {
         height: 88%;
     }
-    .m-portfolio{
+
+    .m-portfolio {
         width: 88%;
         height: 80%;
         column-gap: 2%;
     }
-    .contens__gradient{
+
+    .contens__gradient {
         border-radius: 20px;
-        width:45%;
+        width: 45%;
         height: 39%;
         padding: 2%;
     }
-    .scloll{
+
+    .scloll {
         column-gap: 15%;
         row-gap: 15%;
     }
-    .title-icon{
+
+    .title-icon {
         width: 15%;
         height: fit-content;
         border-radius: 13%;
-      }
-    .icon{
-    width: 15%;
-    height:fit-content;
-    border-radius: 50%;
     }
-    .r{
-        display:flex;
+
+    .icon {
+        width: 15%;
+        height: fit-content;
+        border-radius: 50%;
+    }
+
+    .r {
+        display: flex;
     }
 }
+
 /*pc終り*/

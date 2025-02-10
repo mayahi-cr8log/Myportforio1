@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height:70px;
+    height: 70px;
     min-height: 41.33px;
     background-color: #3af3dd;
     color: #fff;
@@ -14,18 +14,17 @@
 }
 
 .l-header__nav {
-    width:36px;
-    height:36px;
+    width: 10%;
 }
 
 .l-header__hamburger {
     display: none;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 36px;
     height: 35px;
     border: none;
-    background-color:#3af3dd ;
+    background-color: #3af3dd;
     cursor: pointer;
 }
 
@@ -34,14 +33,19 @@
     height: 3px;
     background-color: #06b6dd;
 }
+
 .l-header__nav-drawer {
-    display: none; /* 初期状態で非表示 */
+    display: none;
+    /* 初期状態で非表示 */
     position: absolute;
-    transform: translateX(-92%) translateZ(0); /* 中央揃え */
-    width: 300px;
-    background-color: rgb(132,255,245,0.5);
-    z-index: 1001; /* ヘッダーの上に表示 */
+    transform: translateX(-86%)translateY(4%) translateZ(0);
+    /* 中央揃え */
+    width: 100%;
+    background-color: rgb(132, 255, 245, 0.5);
+    z-index: 1001;
+    /* ヘッダーの上に表示 */
 }
+
 .l-header__nav-list {
     list-style: none;
     padding: 0;
@@ -49,7 +53,8 @@
     display: flex;
     flex-direction: column;
 }
-.l-header__nav-list li{
+
+.l-header__nav-list li {
     box-sizing: border-box;
     border: 2px solid #fff;
     background-color: #06b6dd;
@@ -59,6 +64,7 @@
     text-align: center;
     margin: 30px auto;
 }
+
 .l-header__nav-item {
     color: #fff;
     text-decoration: none;
@@ -66,15 +72,34 @@
     padding: 36px;
     font-size: 16px;
 }
+
+.header_contens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    min-height: 41.33px;
+    background-color: #3af3dd;
+    color: #fff;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    margin: auto;
+}
+
 /* Media Query for Hamburger Menu */
 @media (max-width: 767px) {
     .l-header__hamburger {
         display: flex;
     }
+
     .l-header__nav-drawer.active {
         display: block;
     }
 }
+
 /* Media Query for screen widths above 768px */
 @media (min-width: 768px) {
     .l-header {
@@ -86,35 +111,58 @@
         color: #fff;
         opacity: 0.9;
     }
+
     .l-header__hamburger {
         display: none;
     }
+    .l-header__nav {
+        width: 32%;
+    }
     .l-header__nav-list {
-        display: flex; /* 横並びにする */
-        flex-direction: row; /* 行方向にする */
-        padding: 0; /* パディングをリセット */
-        margin: 0; /* マージンをリセット */
+        display: flex;
+        /* 横並びにする */
+        flex-direction: row;
+        /* 行方向にする */
+        padding: 0;
+        /* パディングをリセット */
+        margin: 0;
+        /* マージンをリセット */
     }
-    .l-header__nav-list li{
+
+    .l-header__nav-list li {
         width: 75px;
-        height: auto; /* 自動高さ */
-        margin: 0; /* マージンをリセット */
-        padding: 3%;
+        height: auto;
+        /* 自動高さ */
+        margin: 0;
+        /* マージンをリセット */
+        padding: 2%;
+        display: flex;
+        justify-content: center;
     }
+
     .l-header__nav-item {
-        padding: 0; /* デフォルトのパディング */
-        border-top: none; /* 境界線を削除 */
-        line-height:  24px;
+        padding: 0;
+        /* デフォルトのパディング */
+        border-top: none;
+        /* 境界線を削除 */
+        line-height: 24px;
     }
 
     .l-header__nav-drawer {
-        display: block; /* ナビゲーションドロワーを表示 */
-        position: static; /* デフォルト位置 */
-        background-color: transparent; /* 背景色を削除 */
-        height: auto; /* 高さを自動に */
-        z-index: 2; /* 必要に応じて調整 */
-        margin: 0; /* 左右のマージンをリセット */
-        padding: 0; /* パディングをリセット */
+        display: block;
+        /* ナビゲーションドロワーを表示 */
+        background-color: transparent;
+        /* 背景色を削除 */
+        height: auto;
+        /* 高さを自動に */
+        z-index: 2;
+        /* 必要に応じて調整 */
+        margin: 0;
+        /* 左右のマージンをリセット */
+        padding: 0;
+        /* パディングをリセット */
+        display: flex;
+        width: 0%;
     }
-    
+
 }
