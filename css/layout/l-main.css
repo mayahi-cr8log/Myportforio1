@@ -301,8 +301,13 @@ width: auto;
 height: fit-content;
 border-radius: 13%;
 color: aliceblue;
-font-size: x-large;
+font-size: 30px;
+position: fixed;
+top: 0;
 
+}
+.contacts{
+  margin-top: 58px;
 }
 .c-icon{
 width: 15%;
